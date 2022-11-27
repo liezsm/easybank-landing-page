@@ -1,3 +1,4 @@
+@use './variables' as *;
 .header {
 
     nav {
@@ -7,7 +8,6 @@
     &__logo {
 
         img {
-
         }
     }
 
@@ -25,5 +25,21 @@
 
         }
 
+    }
+
+    &__links{
+        a{
+            font-size: 0.875rem;
+             color: $grayishBlue;
+        }
+
+        a:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__cta{
+        font-size: $font-sm;
+        color: white;
     }
 }

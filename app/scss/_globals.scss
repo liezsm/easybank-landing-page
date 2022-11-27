@@ -1,3 +1,6 @@
+@use './variables' as *;
+@use './mixins' as *;
+
 html{
     font-size: 100%;
     box-sizing: border-box;
@@ -15,12 +18,27 @@ body{
     line-height: 1.3;
     font-family: 'Public Sans', sans-serif;
     font-size: 1.125rem;
+    font-weight: 300;
+    color: $grayishBlue;
 }
 
 // links
 
 a, a:visited, a:hover {
     text-decoration: none;
+    font-weight: 400;
+}
+
+// buttons
+button, .button{
+    text-transform: capitalize;
+    padding: 0.875rem 2.1875rem;
+    background: linear-gradient(to right,$limeGreen, $brightCyan);
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    color: $white;
+   
 }
 // flex
 .flex{
@@ -37,3 +55,16 @@ a, a:visited, a:hover {
     }
 }
 
+
+// visibility
+.hide-in-mobile{
+    @include breakpoint-down(md){
+        display: none;
+    }
+}
+
+.hide-in-desktop{
+    @include breakpoint-up(md){
+        display: none;
+    }
+}
