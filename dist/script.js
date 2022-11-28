@@ -1,2 +1,2 @@
-const testString="This is a test!",fruits=["mango","papaya","lychee"];fruits.map((s=>{console.log(s)}));
+const hamburger=document.querySelector("[data-hamburger]");hamburger.addEventListener("click",(()=>{hamburger.classList.toggle("open")}));
 //# sourceMappingURL=script.js.map

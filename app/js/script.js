@@ -1,8 +1,4 @@
-const testString = "This is a test!";
-
-
-const fruits = ["mango", "papaya", "lychee"];
-
-fruits.map((fruit) => {
-  console.log(fruit);
-});
+const hamburger = document.querySelector('[data-hamburger]')
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open')
+})

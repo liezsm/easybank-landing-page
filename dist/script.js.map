@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":["testString","fruits","map","fruit","console","log"],"sources":["script.js"],"mappings":"AAAA,MAAMA,WAAa,kBAGbC,OAAS,CAAC,QAAS,SAAU,UAEnCA,OAAOC,KAAKC,IACVC,QAAQC,IAAIF,EAAM"}
+{"version":3,"file":"script.js","names":["hamburger","document","querySelector","addEventListener","classList","toggle"],"sources":["script.js"],"mappings":"AAAA,MAAMA,UAAYC,SAASC,cAAc,oBACzCF,UAAUG,iBAAiB,SAAS,KAClCH,UAAUI,UAAUC,OAAO,OAAM"}
