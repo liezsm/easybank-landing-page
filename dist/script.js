@@ -1,2 +1,2 @@
-const hamburger=document.querySelector("[data-hamburger]");hamburger.addEventListener("click",(()=>{hamburger.classList.toggle("open")}));
+const hamburger=document.querySelector("[data-hamburger]"),header=document.querySelector("[data-header"),overlay=document.querySelector("[data-overlay");hamburger.addEventListener("click",(()=>{header.classList.toggle("open")}));
 //# sourceMappingURL=script.js.map

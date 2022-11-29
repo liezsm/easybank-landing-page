@@ -1,5 +1,6 @@
 @use './variables' as *;
 @use './mixins' as *;
+@use './animations' as *;
 
 html{
     font-size: 100%;
@@ -67,4 +68,12 @@ button, .button{
     @include breakpoint-up(md){
         display: none;
     }
+}
+
+// animation
+.fade-in{
+      animation: fade-in 300ms ease-in-out forwards;
+}
+.fade-out{
+      animation: fade-out 300ms ease-in-out forwards;
 }
