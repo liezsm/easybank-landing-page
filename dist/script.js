@@ -1,2 +1,2 @@
-const hamburger=document.querySelector("[data-hamburger]"),header=document.querySelector("[data-header"),overlay=document.querySelector("[data-overlay");hamburger.addEventListener("click",(()=>{header.classList.toggle("open")}));
+const hamburger=document.querySelector("[data-hamburger]"),header=document.querySelector("[data-header"),overlay=document.querySelector("[data-overlay");hamburger.addEventListener("click",(()=>{header.classList.toggle("open"),header.classList.contains("open")?(overlay.classList.add("fade-in"),overlay.classList.remove("fade-out")):(overlay.classList.add("fade-out"),overlay.classList.remove("fade-in"))}));
 //# sourceMappingURL=script.js.map

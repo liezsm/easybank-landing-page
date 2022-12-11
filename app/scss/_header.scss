@@ -18,13 +18,12 @@
             }
         }
         .overlay{
-            display: block;
-          
+           visibility: visible;
         }
     }
 
     .overlay{
-        display: none;
+        visibility: hidden;
         position: fixed;
         inset: 0;
         top: 60px;
