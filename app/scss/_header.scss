@@ -25,12 +25,14 @@
     .overlay{
         visibility: hidden;
         position: fixed;
+        z-index: 3;
         inset: 0;
         top: 60px;
         background-image: linear-gradient($darkBlue, transparent);
     }
     nav {
-        padding: 17px 24px;
+       padding-top: 17px;
+       padding-bottom: 17px;
     }
 
     &__logo {
@@ -99,12 +101,23 @@
     }
 
     &__cta{
-        font-size: $font-sm;
-        color: white;
+     
         transition: opacity 300ms ease-in-out;
 
         &:hover{
             opacity: 0.75;
+        }
+    }
+    &__navlinks{
+        background-color: $white;
+        margin-top: 7px;
+        border-radius: 5px;
+
+        a{
+            display: block;
+            text-align: center;
+            color: $darkBlue;
+            padding: 0.625rem;
         }
     }
 }
