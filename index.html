@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
- 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="dist/style.css">
-  
-  <title>Frontend Mentor | Easybank landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
 
-  <header class="header" data-header>
-    <div class="overlay hide-in-desktop" data-overlay>
+    <title>Frontend Mentor | Easybank landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="overlay hide-in-desktop" data-overlay>
+        <div class="container">
+          <div class="header__navlinks">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+          </div>
+        </div>
+      </div>
+      <nav class="flex flex-ai-c flex-jc-sb container container--px">
+        <a href="/" class="header__logo">
+          <img src="/images//logo.svg" alt="Easybank" />
+        </a>
+
+        <a href="#" class="header__menu hide-in-desktop" data-hamburger>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-in-mobile">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#"> Blog</a>
+          <a href="#"> Careers</a>
+        </div>
+
+        <a href="#" class="button header__cta hide-in-mobile"
+          >request invite
+        </a>
+      </nav>
+    </header>
+    <!-- test for wsl ssh  -->
+    <section class="hero">
       <div class="container">
-        <div class="header__navlinks">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
-        <a href="">Careers</a>
+        <div class="hero__image"></div>
+        <div class="hero__text container--pall">
+          <h1>Next generation digital banking</h1>
+          <p class="hero__content">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <a href="#" class="button hero__cta"> Request Invite</a>
+        </div>
       </div>
-      </div>
-    </div>
-    <nav class="flex flex-ai-c flex-jc-sb container container--px">
-      <a href="/" class="header__logo">
-        <img src="/images//logo.svg" alt="Easybank" >
-      </a>
-
-      <a href="#" class="header__menu hide-in-desktop" data-hamburger>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
-      <div class="header__links hide-in-mobile">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#"> Blog</a>
-        <a href="#"> Careers</a>
-      </div>
-
-      <a href="#" class="button header__cta hide-in-mobile">request invite
-      </a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero__image">
-       
-      </div>
-      <div class="hero__text container--pall">
-        <h1>  Next generation digital banking</h1>
-        <p class="hero__content">
-            Take your financial life online. Your Easybank account will be a one-stop-shop 
-          for spending, saving, budgeting, investing, and much more.
-        </p>
-        <a href="#" class="button hero__cta"> Request Invite</a>
-      </div>
-    </div>
-  </section>
-  <!-- 
+    </section>
+    <!-- 
   
 
   
@@ -147,10 +160,12 @@
 
   © Easybank. All Rights Reserved
    -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-<script src="dist/script.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="dist/script.js"></script>
 </html>
