@@ -2,27 +2,28 @@
 // for desktop 1024, em are more effective for media queries
 // create a map
 // 640px, 1024px, 1400px
-$breakpoints-up:(
-    "sm": "40em",
-    "md": "48em",
-    "l": "64em",
-    "xl": "87.5em"
+$breakpoints-up: (
+  "sm": "40em",
+  "md": "48em",
+  "l": "64em",
+  "ml": "75em",
+  "xl": "87.5em",
 );
 // 639px, 1023px, 1399px
-$breakpoints-down:(
-    "sm": "39.9375em",
-    "md": "63.9375em",
-    "l": "87.4375em"
+$breakpoints-down: (
+  "sm": "39.9375em",
+  "md": "63.9375em",
+  "l": "87.4375em",
 );
 
 // mixin
-@mixin breakpoint-up($size){
-    @media (min-width: map-get($breakpoints-up, $size)){
-        @content;
-    }
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
 }
-@mixin breakpoint-down($size){
-    @media (max-width: map-get($breakpoints-down, $size)){
-        @content;
-    }
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
 }
